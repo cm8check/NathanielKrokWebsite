@@ -1,0 +1,130 @@
+body {
+    background-color: rgb(219, 219, 219);
+    margin: 0;
+    font-family: Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.navbar {
+    background-color: rgb(74, 165, 255);
+    height: 55px;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    box-shadow: 0px 10px 100px rgba(0, 128, 255, 0.678);
+}
+
+.navbar li {
+    display: inline;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+
+    transition: 0.2s background-color, color;
+}
+
+.navbar a:hover {
+    background-color: rgb(140, 209, 255);
+}
+
+.nav-open-button a {
+    padding-top: 13px;
+    float: left;
+}
+
+#showcase {
+    padding: 80px 40px 40px 40px;
+    background-color: rgb(91, 173, 255);
+    min-height: 200px;
+    box-shadow: 0px 10px 20px 2px darkgray;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+#main-footer {
+    bottom: 0%;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    background-color: rgb(230, 230, 230);
+    border-top: 1px solid rgb(201, 201, 201);
+}
+
+#main-footer p {
+    color: rgb(134, 134, 134);
+    text-align: center;
+}
+
+#side-menu {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(44, 44, 44);
+    opacity: 0.8;
+    overflow-x: hidden;
+    padding-top: 50px;
+
+    transition-timing-function: ease-in-out;
+    transition: 0.3s;
+}
+
+#side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#side-menu a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(216, 216, 216);
+    display: block;
+
+    transition: 0.2s;
+}
+
+#side-menu a:hover {
+    color: white;
+    padding: 10px 10px 10px 40px;
+}
+
+#side-menu .btn-close {
+    position: absolute;
+    top: -5px;
+    right: 22px;
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+#main-section {
+    font-size: 25px;
+    padding: 40px 60px;
+    text-align: justify;
+    text-justify: auto;
+    color: rgb(68, 68, 68);
+}
+
+.container {
+    max-width: 760px;
+    margin: auto;
+}
+
+@media(max-width: 500px) {
+    .navbar ul {
+        display: none;
+    }
+}
+
+@media(min-width: 500px) {
+    .nav-open-button {
+        display: none;
+    }
+}
